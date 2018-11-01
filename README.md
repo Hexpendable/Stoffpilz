@@ -1,6 +1,6 @@
 # Stoffpilz
 
-USERMOD-Files und andee Anpassungen am Gambio Web-Shop für **Stoffpilz.ch**
+USERMOD-Files und andere Anpassungen am Gambio Web-Shop für **Stoffpilz.ch**
 Zur Installation in **temporäres** Verzeichnis clonen und anschliessend ins Original-Verzeichnis kopieren.
 
 ## Aktuelle Shopversionen:
