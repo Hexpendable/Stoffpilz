@@ -8,8 +8,8 @@ Zur Installation in **temporäres** Verzeichnis clonen und anschliessend ins Ori
 
 
 ## Change log
-*03.11.2018:*  
-* Live-Shop inkl. DB kopiert nach /test/stoffpilz.ch
-*04.11.2018:*  
+**03.11.2018:**  
+* Live-Shop inkl. DB kopiert nach /test/stoffpilz.ch  
+**04.11.2018*:**  
 * Update auf V 3.10.1.0 gem. Hanbuch durchgeführt
 * Inhalt Offline-Seite angepasst
