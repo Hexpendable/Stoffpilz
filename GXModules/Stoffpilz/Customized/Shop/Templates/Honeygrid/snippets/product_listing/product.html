@@ -1,0 +1,25 @@
+{block name="snippets_product_listing_product_price_text"}
+	<div class="price">
+  <!-- Beginn: Angabe pro Meter bei Meterware (1) --> 
+  {if $p_unit == 'm'}
+    {$p_price} <nobr>pro Meter</nobr>
+  {else}
+  <!-- Ende: Angabe pro Meter bei Meterware (1) -->   
+		<span class="current-price-container"{if $p_meta} title="{$p_meta}"{/if}>
+			{$p_price}
+      
+			{if $p_price|stripos:$general.NOT_ALLOWED_TO_SEE_PRICES === false}
+				<span class="gm_products_vpe products-vpe">
+				  {if $p_vpe}
+					  {$p_vpe}
+				  {else}
+					  &nbsp;
+				  {/if}
+				</span>
+			{/if}
+		</span>
+  <!-- Ende: Angabe pro Meter bei Meterware (2) --> 
+	{/if}
+  <!-- Ende: Angabe pro Meter bei Meterware (2) --> 
+  </div>
+{/block}

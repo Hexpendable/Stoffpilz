@@ -1,0 +1,37 @@
+{block name="snippets_product_info_price"}
+	<div class="current-price-container">    <!-- Zusätzlich Style eingefügt -->
+		{block name="snippets_product_info_price_price"}
+			{$RICH_SNIPPET_ARRAY.offer_itemprop_price_start}{$PRODUCTS_PRICE}{$RICH_SNIPPET_ARRAY.offer_itemprop_price_end}
+		{/block}
+    
+		{if $PRODUCTS_VPE}
+			{block name="snippets_product_info_price_vpe"}
+				<br />
+				<span class="tax-shipping-text gm_products_vpe products-vpe">
+					{$PRODUCTS_VPE}
+				</span>
+				<br />
+			{/block}
+		{/if}
+	</div>
+  
+  <!-- Beginn: Angabe pro Meter bei Meterware --> 
+  {if $PRODUCTS_QUANTITY_UNIT == 'm'}
+  <div style="font-size: 19px; font-weight: 550; line-height: 25px; text-align: right;">
+    &nbsp;pro Meter
+  </div>
+  {/if}
+  <!-- Ende: Angabe pro Mwter bei Meterwarte -->
+
+	{block name="snippets_product_info_price_currency"}
+		{$RICH_SNIPPET_ARRAY.offer_itemprop_price_currency}
+	{/block}
+  
+
+	{block name="snippets_product_info_price_tax"}
+		<p class="tax-shipping-text text-small">
+			{$PRODUCTS_TAX_INFO}{$PRODUCTS_SHIPPING_LINK}
+		</p>
+	{/block}
+{/block}
+
