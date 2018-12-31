@@ -7,7 +7,7 @@ cd Stoffpilz
 
 git add -A
 
-read -p "Kommentar in Anführungs-/Schlusszeichen ("):  " message
+read -p "Kommentar in Anführungs-/Schlusszeichen:  " message
 git commit -am "$message"
 
 git push origin master
